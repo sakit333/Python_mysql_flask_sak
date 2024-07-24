@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Signup</h2>
+<form method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+    <label for="number">Number:</label>
+    <input type="text" id="number" name="number" required><br>
+    <input type="submit" value="Signup">
+</form>
+{% endblock %}
