@@ -5,6 +5,10 @@ from app import get_db_connection
 def homepage():
     return render_template('homepage.html')
 
+@app.route('/layout', methods=['GET', 'POST'])
+def layout():
+    return render_template('layout.html')
+
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
     if request.method == 'POST':
